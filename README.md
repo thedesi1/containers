@@ -15,8 +15,7 @@ Dockerfile contains the instructions to build an image from any source code. A D
 
 #### Dockerfile Best Practices
 -------------------------
-
-Some of the `Dockerfile` practices that is followed:
+`Dockerfile` practices that is followed:
 
 1.  Use a `.dockerignore` file to exclude unnecessary files and directories to increase the build’s performance.
 2.  Use **trusted base images** only and keep updating the images periodically.

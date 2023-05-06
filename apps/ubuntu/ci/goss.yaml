@@ -1,0 +1,24 @@
+---
+# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#file
+file:
+  /scripts/greeting.sh:
+    exists: true
+  /scripts/umask.sh:
+    exists: true
+  /scripts/vpn.sh:
+    exists: true
+  /usr/local/bin/envsubst:
+    exists: true
+
+# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#group
+group:
+  k8s:
+    exists: true
+    gid: 1000
+
+# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#user
+user:
+  k8s:
+    exists: true
+    uid: 1000
+    gid: 1000

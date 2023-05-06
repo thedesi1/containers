@@ -30,7 +30,7 @@ Dockerfile contains the instructions to build an image from any source code. A D
 11.  **Use a single process per container:** Each container should run a single process. This makes it easier to manage and monitor containers, and helps to keep containers lightweight.
 12.  **Use multi-stage builds:** Use multi-stage builds to create smaller and more efficient images.
 
-## Tag immutability
+### Tag immutability
 
 The containers built here do not use immutable tags, as least not in the more common way you have seen from [linuxserver.io](https://fleet.linuxserver.io/) or [Bitnami](https://bitnami.com/stacks/containers). 
 
@@ -45,7 +45,7 @@ We take do take a similar approach but instead of appending a `-ls69` or `-r420`
 
 _If pinning an image to the sha256 digest, tools like [Renovate](https://github.com/renovatebot/renovate) support updating the container on a digest or application version change._
 
-## Passing arguments to a application
+### Passing arguments to a application
 
 Some applications do not support defining configuration via environment variables and instead only allow certain config to be set in the command line arguments for the app. To circumvent this, for applications that have an `entrypoint.sh` read below.
 
@@ -60,6 +60,6 @@ Some applications do not support defining configuration via environment variable
       - "8080"
     ```
 
-## Configuration volume
+### Configuration volume
 
 For applications that need to have persistent configuration data the config volume is hardcoded to `/config` inside the container. This is not able to be changed in most cases.

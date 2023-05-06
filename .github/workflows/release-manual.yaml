@@ -22,7 +22,7 @@ on:
         required: true
 
 env:
-  TOKEN: ${{ secrets.TOKEN }}
+  GIT_TOKEN: ${{ secrets.TOKEN }}
 
 jobs:
   generate-build-matrix:

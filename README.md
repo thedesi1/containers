@@ -14,7 +14,7 @@ While Docker is selected as the container runtime, there are plenty of other con
 Dockerfile contains the instructions to build an image from any source code. A Dockerfile at a 10,000, foot view is a set of instructions to build my application and package it up as an image.
 
 #### Dockerfile Best Practices
--------------------------
+
 `Dockerfile` practices that is followed:
 
 1.  Use a `.dockerignore` file to exclude unnecessary files and directories to increase the build’s performance.

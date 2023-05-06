@@ -1,18 +1,19 @@
 # containers
+
 K8s tailored container images for home lab to learn and build cloud native apps.
 
 ## Project goal
+
 The goal of this project is to support [semantically versioned](https://semver.org/), [rootless](https://rootlesscontaine.rs/), and [multiple architecture](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/) containers for various applications.
 
 We aspire to achive, if possible, logging to stdout, [one process per container](https://testdriven.io/tips/59de3279-4a2d-4556-9cd0-b444249ed31e/), no [s6-overlay](https://github.com/just-containers/s6-overlay) and all images are built on top of [Alpine](https://hub.docker.com/_/alpine) or [Ubuntu](https://hub.docker.com/_/ubuntu).
-###Using GitHub Actions to Build Docker Images
--------------------------
-While Docker is selected as the container runtime, there are plenty of other container runtimes to use as well such as Containerd and Podman. The image specification to build a container has been standardized as the [OCI Image Format](https://github.com/opencontainers/image-spec "OCI Image Format"). Docker is one of the most popular and has excellent cross-platform support, easier to use, which helps others who are new to containers.
 
-###The Dockerfile
+## Using GitHub Actions to Build Docker Images
+While Docker is selected as the container runtime, there are plenty of other container runtimes to use as well such as Containerd and Podman. The image specification to build a container has been standardized as the [OCI Image Format](https://github.com/opencontainers/image-spec "OCI Image Format"). Docker is one of the most popular and has excellent cross-platform support, easier to use, which helps others who are new to containers. 
+### The Dockerfile
 Dockerfile contains the instructions to build an image from any source code. A Dockerfile at a 10,000, foot view is a set of instructions to build my application and package it up as an image.
 
-####Dockerfile Best Practices
+#### Dockerfile Best Practices
 -------------------------
 
 Some of the `Dockerfile` practices that is followed:
@@ -29,4 +30,3 @@ Some of the `Dockerfile` practices that is followed:
 10.  **Use a linter:** Use a linter like hadolint to check your Dockerfile for common issues and best practices.
 11.  **Use a single process per container:** Each container should run a single process. This makes it easier to manage and monitor containers, and helps to keep containers lightweight.
 12.  **Use multi-stage builds:** Use multi-stage builds to create smaller and more efficient images.
-

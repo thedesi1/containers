@@ -2,7 +2,7 @@
 
 K8s tailored container images for home lab to learn and build cloud native apps.
 
-## Project goal
+## Why? Really why we need this?
 
 The goal of this project is to support [semantically versioned](https://semver.org/), [rootless](https://rootlesscontaine.rs/), and [multiple architecture](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/) containers for various applications.
 
